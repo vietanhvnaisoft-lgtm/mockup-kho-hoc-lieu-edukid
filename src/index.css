@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Quicksand:wght@500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Quicksand", ui-sans-serif, system-ui, sans-serif;
+  --color-brand-pink: #fbcfe8;
+  --color-brand-mint: #a7f3d0;
+  --color-brand-yellow: #fef08a;
+
+  @keyframes shimmer {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }
+}
+
+.shimmer-container {
+  position: relative;
+  overflow: hidden;
+  background-color: #F6F8FC;
+}
+
+.shimmer-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+  animation: shimmer 1.8s infinite linear;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #fdf2f8; /* Soft pink background fallback */
+}
