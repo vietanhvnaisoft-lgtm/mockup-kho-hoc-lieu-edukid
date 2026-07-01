@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Kho Học Liệu Số",
+  "description": "Kho học liệu số mầm non dành cho phụ huynh, tối ưu hóa giao diện soft rounded preschool UI",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
